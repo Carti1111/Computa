@@ -9,7 +9,7 @@ from gtts import gTTS
 import requests
 import conf
 
-activity = discord.Activity(type=discord.ActivityType.watching, name=f"Wextra's PC||{conf.PREFIX}help")
+activity = discord.Activity(type=discord.ActivityType.watching, name=f"Lunar's PC||{conf.PREFIX}help")
 
 bot = commands.Bot(command_prefix=conf.PREFIX,
                    activity = activity,
@@ -17,7 +17,7 @@ bot = commands.Bot(command_prefix=conf.PREFIX,
                    case_insensitive=True,
                    intents=discord.Intents.all())
 
-host = conf.HOSTNAME # ex: C:/Users/QwertyL0L/Downloads/computa.py
+host = conf.HOSTNAME # ex: C:/Users/sajun/Downloads/computa.py
 
 def restart_bot(): 
     os.execv(sys.executable, ['python'] + sys.argv)
@@ -300,7 +300,7 @@ async def restart(ctx: commands.Context):
         await ctx.reply('Restarting...')
         restart_bot()
     else:
-        await ctx.send("You arent the owner of the bot!")
+        await ctx.send("You arent the owner of the bot silly dumbass!")
 
 @bot.command()
 @commands.cooldown(1, 10, commands.BucketType.user)
